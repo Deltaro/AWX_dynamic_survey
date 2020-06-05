@@ -1,0 +1,51 @@
+{
+  "name": "",
+  "description": "",
+  "spec": [
+    {
+      "question_name": "Username",
+      "question_description": "entre the username",
+      "required": true,
+      "type": "text",
+      "variable": "username",
+      "min": 2,
+      "max": 10,
+      "default": "",
+      "choices": ""
+    },
+    {
+      "question_name": "STATE",
+      "question_description": "do you want to lock this account",
+      "required": true,
+      "type": "multiplechoice",
+      "variable": "user_state",
+      "min": null,
+      "max": null,
+      "default": "present",
+      "choices": "present\nlock",
+      "new_question": true
+    },
+    {
+      "question_name": "SSH public Key",
+      "question_description": "copy the ssh public key",
+      "required": false,
+      "type": "text",
+      "variable": "ssh_key",
+      "min": 0,
+      "max": 16384,
+      "default": "",
+      "choices": ""
+    },
+    {
+      "question_name": "SERVER",
+      "question_description": "list the server or the group of server that you want to impact",
+      "required": true,
+      "type": "multiselect",
+      "variable": "servers",
+      "min": null,
+      "max": null,
+      "default": "",
+      "choices": "10.10.85.1\n10.10.85.13\n10.10.85.11\n10.10.85.12\n10.10.85.17\n10.10.85.18\n10.10.85.15\n10.10.85.16\n10.10.85.16\n11.10.85.16"
+    }
+  ]
+}
